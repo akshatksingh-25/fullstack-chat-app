@@ -1,0 +1,49 @@
+Frontend - React, Tailwind, Zustand, Daisy UI
+Backend - NodeJS, Express, MongoDB, SocketIO
+_____________________________________________________________________
+
+
+BACKEND->
+PS D:\Projects\Web Development Projects\Chat Website> cd .\backend\
+PS D:\Projects\Web Development Projects\Chat Website\backend> npm init -y
+PS D:\Projects\Web Development Projects\Chat Website\backend> npm i express mongoose dotenv jsonwebtoken bcryptjs cookie-parser cloudinary socket.io 
+PS D:\Projects\Web Development Projects\Chat Website\backend> npm i nodemon -D
+_____________________________________________________________________
+
+
+Database->
+Connected from MongoDB
+
+We Have:
+
+users - (email,fullName,password,profilePic)-this all at _id. This is created by MongoDB itself.
+we also take createdAt,updatedAt
+
+messages - senderId,receiverId,text,image
+_____________________________________________________________________
+
+
+LOGIN->
+For Login we will check if the user exists with the email and then we check if he provides correct password. If so we login else not.
+We will also implement that if email is wrong it says Invalid Credentials so that if a user is a malicious user we will not tell that which field they are providing wrong email or password.
+_____________________________________________________________________
+
+
+
+LOGOUT->
+For logout we will do just one thins that we will clear out the cookies.
+_____________________________________________________________________
+
+
+UPDATE->
+For update we are allowing user only to update its profile picture. We will fetch user's email and fullName but user can't change it.
+We want to put something that's why we used router.put in routes.
+If a user wants to update the profile we will first check they are logged in or authenticated. For this we created protectRoute which is a middleware. 
+
+Initiate request - Request with JWT cookie - Validate JWT - Validation result - Valid JWT(grant access) Invalid JWT(error message) - Response
+
+
+We need a service to upload our images into. We are using cloudinary.com
+_____________________________________________________________________
+
+

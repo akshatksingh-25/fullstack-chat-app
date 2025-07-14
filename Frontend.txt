@@ -1,0 +1,41 @@
+🔶 npm i react-router-dom react-hot-toast ->
+npm i
+This installs packages into your project (updates your package.json and package-lock.json).
+
+react-router-dom :
+Purpose: For routing in React web apps.
+What it does:
+Enables navigation between pages/components without reloading the page.
+Provides components like <BrowserRouter>, <Routes>, <Route>, <Link>, useNavigate, etc.
+
+react-hot-toast :
+Purpose: For notifications (toast messages) in React apps.
+What it does:
+Shows quick pop-up messages for success, error, or info (like “Login successful” or “Error uploading file”).
+Very easy to use, clean UI.
+_____________________________________________________________________
+
+Installed Tailwind and daisyUI
+_____________________________________________________________________
+
+npm i axios zustand - for installing zustand
+✅ Zustand is a small, fast, and scalable state management library for React.
+✅ It is simpler and lighter compared to Redux.
+✅ Developed by the creators of Jotai and React Three Fiber, under the PMNDRS group.
+🔷 What does it do?
+Manages global state (data shared across components) without boilerplate.
+Uses hooks-based API, very intuitive for React developers.
+No need for reducers, actions, or large setup like Redux.
+_____________________________________________________________________
+
+For loading icon i.e.like Loader we are doing npm i lucide-react
+
+_____________________________________________________________________
+
+socket.io - FOR REAL TIME COMMUNICATION
+
+_____________________________________________________________________
+
+
+
+
